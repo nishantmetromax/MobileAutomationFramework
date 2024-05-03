@@ -24,7 +24,7 @@ public class ExtentReport {
 	{
 	
 		extent = new ExtentReports();
-        spark = new ExtentSparkReporter("Login_Report.html");
+        spark = new ExtentSparkReporter("launch_browser.html");
         extent.attachReporter(spark);
 	}
 	

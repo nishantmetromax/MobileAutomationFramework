@@ -18,12 +18,17 @@ public class BaseClass extends ExtentReport {
 	{
 		DesiredCapabilities dc = new DesiredCapabilities();
 
-//        dc.setCapability("deviceName", "Pixel 6 Pro API 31");
-		dc.setCapability("deviceName", "Pixel 3 XL API 31");
+		dc.setCapability("deviceName", "Pixel 6 Pro API 31");
+//		dc.setCapability("deviceName", "Pixel 3 XL API 31");
         dc.setCapability("platformName", "Android");
         dc.setCapability("automationName", "uiautomator2");
         dc.setCapability("appplatformVersion", "12.0");
-        dc.setCapability("app", "C:\\Users\\lnv0113\\Music\\apk\\TRSTQA100.apk");
+//        dc.setCapability("app", "C:\\Users\\lnv0113\\Music\\apk\\TRSTQA100.apk");
+        
+//		dc.setCapability("app", "C:\\Users\\lnv0113\\Music\\apk\\MyDemoAppRN.apk");
+//		dc.setCapability("app", "C:\\Users\\lnv0113\\Music\\apk\\appium310.apk");
+    	dc.setCapability("browserName", "Chrome");
+		dc.setCapability("chromedriverExecutable", "C:\\Users\\lnv0113\\Music\\eclipse-jee-2024-03-R-win32-x86_64\\AppiumDemo\\driver\\chromedriver.exe");
 
         URL url = URI.create("http://127.0.0.1:4723/wd/hub").toURL();
         driver = new AndroidDriver(url, dc);
